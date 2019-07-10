@@ -1,0 +1,101 @@
+#menuBtn{
+  visibility: hidden;
+}
+.logo{
+  width:87px;
+  margin-top:-20px;
+  }
+.navBar{
+   height:100px;
+   box-shadow: 0px 0px 5px 0px rgb(161, 159, 159);
+}
+.menu ul{
+  float:right;
+  margin-top:-20px;
+}
+.menu ul li{
+  display: inline-block;
+  margin-top:35px;
+  padding-right: 10px;
+}
+.menu ul li a{
+  text-decoration:none;
+  font-size: 17px;
+}
+.btn-simple{
+  background-color:rgb(79, 201, 63);;
+  color:white;
+  padding:13px;
+  border-radius: 7px;
+  width:100px;
+}
+.btn-outline{
+  border:1px solid rgb(79, 201, 63);;
+  background-color: white;
+  color:rgb(79, 201, 63);;
+   padding:13px;
+   border-radius: 7px;
+   width:100px;
+}
+@media screen and (max-width: 600px) {
+  .menu {
+    visibility: hidden;
+    box-shadow:0px 0px 5px 0px white;
+   
+  }
+ 
+  .menu ul li{
+    display:block;  
+}
+  .logo{
+    visibility: visible;
+  }
+  .resBtn{
+    border:1px solid white;
+    opacity:0.5;
+    background-image: url("resources/menu.png");
+    background-size: 50px 50px;
+    float:right;
+    width:50px;
+    height:50px;
+   margin-top:20px;
+  }
+  .resBtn + .menu:active,
+  .resBtn:focus + .menu {
+    visibility: visible;
+  } 
+  
+  #menuBtn{
+  visibility: visible;
+  margin-top:20px;
+  width:60px;
+  background-color:white;
+  border:1px solid grey;
+  border-radius: 5px;
+  outline:none;
+  }
+
+  
+  .menu ul li a{
+    list-style: none;
+    text-align: center;
+  }
+  a{
+    text-decoration:none;
+  }
+  .btn-simple{
+    background-color:rgb(79, 201, 63);
+    color:white;
+    padding:5px;
+    border-radius: 5px;
+    width:100px;
+  }
+  .btn-outline{
+    border:1px solid rgb(79, 201, 63);;
+    background-color: white;
+    color:rgb(79, 201, 63);;
+     padding:5px;
+     border-radius: 5px;
+     width:100px;
+  }
+}
